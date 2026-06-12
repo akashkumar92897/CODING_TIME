@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.parent {
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.child1 {
+    background-color: rgb(50, 177, 205);
+    border: 2px solid white;
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    justify-self: center;
+}
+
+.child2 {
+    background-color: rgb(183, 114, 69);
+    border: 2px solid white;
+}
+
+.child3 {
+    background-color: rgb(153, 68, 156);
+    border: 2px solid white;
+    height: 200px;
+    width: 200px;
+    align-self: center;
+    justify-self: center;
+}
+
+.child4 {
+    background-color: rgb(143, 48, 11);
+    border: 2px solid white;
+}

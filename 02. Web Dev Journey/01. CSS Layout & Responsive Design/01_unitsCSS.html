@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSS Units Playground</title>
+    <link rel="stylesheet" href="01_unitsCSS.css">
+
+</head>
+
+<body>
+
+    <h1>CSS Units Playground</h1>
+
+    <p>
+        Open DevTools and experiment with values.
+        Resize the browser window to understand viewport units.
+    </p>
+
+    <section>
+        <h2>1. px (Pixels)</h2>
+        <p>Fixed size. Doesn't depend on parent or viewport.</p>
+
+        <div class="box px-box">
+            width: 300px<br>
+            height: 80px
+        </div>
+    </section>
+
+    <section>
+        <h2>2. em</h2>
+
+        <div class="em-parent">
+            Parent font-size: 20px
+
+            <div class="em-child">
+                font-size: 2em (40px)<br>
+                padding: 1em (40px)
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>3. rem</h2>
+
+        <p>
+            Root font-size is currently:
+            <code>html { font-size: 16px; }</code>
+        </p>
+
+        <div class="rem-box">
+            font-size: 2rem (32px)<br>
+            padding: 1rem (16px)
+        </div>
+    </section>
+
+    <section>
+        <h2>4. Percentage (%)</h2>
+
+        <div class="percent-parent">
+            Parent Width = 500px
+
+            <div class="percent-child">
+                width: 50%<br>
+                padding: 5%
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>5. vw and vh</h2>
+
+        <div class="box vw-box">
+            width: 50vw<br>
+            height: 10vh
+        </div>
+
+        <p>Resize the browser window.</p>
+    </section>
+
+    <section>
+        <h2>6. vmin</h2>
+
+        <div class="vmin-box"></div>
+
+        <p>
+            Size depends on the smaller viewport dimension.
+        </p>
+    </section>
+
+    <section>
+        <h2>7. vmax</h2>
+
+        <div class="vmax-box"></div>
+
+        <p>
+            Size depends on the larger viewport dimension.
+        </p>
+    </section>
+
+    <section>
+        <h2>8. ch</h2>
+
+        <input class="ch-input" type="text" placeholder="width: 30ch">
+
+        <p>
+            Width is based on the width of the character "0".
+        </p>
+    </section>
+
+    <section>
+        <h2>9. lh</h2>
+
+        <div class="lh-demo">
+            This container has line-height: 2.
+
+            <div class="lh-box">
+                height: 3lh
+            </div>
+        </div>
+
+        <p>
+            Try changing the line-height value and observe the green box.
+        </p>
+    </section>
+
+    <section>
+        <h2>Exercises</h2>
+
+        <ol>
+            <li>Change html font-size from 16px to 20px.</li>
+            <li>Change parent font-size in the em section to 30px.</li>
+            <li>Resize browser width and observe vw.</li>
+            <li>Resize browser height and observe vh.</li>
+            <li>Switch between portrait and landscape window shapes and compare vmin/vmax.</li>
+            <li>Change input width from 30ch to 50ch.</li>
+            <li>Change line-height from 2 to 3 and observe 3lh.</li>
+            <li>Create a card using only rem units.</li>
+            <li>Create a square using only vmin.</li>
+            <li>Create a hero heading using vmax.</li>
+        </ol>
+    </section>
+
+</body>
+
+</html>
