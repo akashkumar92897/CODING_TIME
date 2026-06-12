@@ -1,0 +1,74 @@
+# Operating System   ==========================================
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# VS Code   ==========================================
+.vscode/
+
+# Environment Variables   ==========================================
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# Logs   ==========================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# C++ / DSA   ==========================================
+# Windows executables
+*.exe
+
+# Object files
+*.o
+*.obj
+
+# Static libraries
+*.a
+*.lib
+
+# Shared libraries
+*.dll
+*.so
+*.dylib
+
+# Debug symbols
+*.pdb
+
+# GCC output
+*.out
+
+# Node.js / JavaScript   ==========================================
+node_modules/
+
+# Package managers
+.npm/
+.pnpm-store/
+
+# Build output
+dist/
+build/
+
+# Cache
+.cache/
+
+# React / Next.js / Vite   ==========================================
+.next/
+.vercel/
+
+# Testing   ==========================================
+coverage/
+
+# Temporary Files   ==========================================
+*.tmp
+*.temp
+*.swp
+*.swo
+
+# Misc   ==========================================
+*.zip
+*.rar
