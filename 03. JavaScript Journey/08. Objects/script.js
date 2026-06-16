@@ -1,0 +1,312 @@
+// ======================================== CHAPTER 8: OBJECTS ========================================
+
+Q1. Create a student object containing:
+- Name
+- Age
+- City
+
+Print the object.
+
+// ----------------------------------------------------------------------------------
+
+Q2. Access and print:
+- Name
+- Age
+
+using dot notation.
+
+// ----------------------------------------------------------------------------------
+
+Q3. Access and print:
+- Name
+- Age
+
+using bracket notation.
+
+// ----------------------------------------------------------------------------------
+
+Q4. Update the age property.
+
+Print the updated object.
+
+// ----------------------------------------------------------------------------------
+
+Q5. Add a new property:
+course
+
+Print the object.
+
+// ----------------------------------------------------------------------------------
+
+Q6. Delete the city property.
+
+Print the object.
+
+// ----------------------------------------------------------------------------------
+
+Q7. Create a car object containing:
+- Brand
+- Model
+- Price
+
+Print all properties.
+
+// ----------------------------------------------------------------------------------
+
+Q8. Create a nested object:
+
+student -> address -> city
+
+Access and print the city.
+
+// ----------------------------------------------------------------------------------
+
+Q9. Create a nested object:
+
+company -> employee -> department
+
+Print the department name.
+
+// ----------------------------------------------------------------------------------
+
+Q10. Explain the difference between:
+dot notation
+and
+bracket notation
+
+// ----------------------------------------------------------------------------------
+
+Q11. Create a const object.
+
+Modify one property.
+
+Observe the result.
+
+// ----------------------------------------------------------------------------------
+
+Q12. Try reassigning the const object.
+
+Observe the result.
+
+// ----------------------------------------------------------------------------------
+
+Q13. Create an object method named greet().
+
+Print:
+Hello Student
+
+// ----------------------------------------------------------------------------------
+
+Q14. Create an object method that prints the object's name property using this.
+
+// ----------------------------------------------------------------------------------
+
+Q15. Explain the purpose of:
+this
+
+inside an object.
+
+// ----------------------------------------------------------------------------------
+
+Q16. Loop through an object using for...in.
+
+Print only keys.
+
+// ----------------------------------------------------------------------------------
+
+Q17. Loop through an object using for...in.
+
+Print keys and values.
+
+// ----------------------------------------------------------------------------------
+
+Q18. Use Object.keys().
+
+Print the result.
+
+// ----------------------------------------------------------------------------------
+
+Q19. Use Object.values().
+
+Print the result.
+
+// ----------------------------------------------------------------------------------
+
+Q20. Use Object.entries().
+
+Print the result.
+
+// ----------------------------------------------------------------------------------
+
+Q21. Count the number of properties in an object.
+
+// ----------------------------------------------------------------------------------
+
+Q22. Create a dictionary object containing:
+- word
+- meaning
+
+Store at least 5 entries.
+
+// ----------------------------------------------------------------------------------
+
+Q23. Print all words and meanings using a loop.
+
+// ----------------------------------------------------------------------------------
+
+Q24. Create a profile object containing:
+- Name
+- Skills
+- Education
+- Projects
+
+Print all information.
+
+// ----------------------------------------------------------------------------------
+
+Q25. Create an object representing a book.
+
+Print all properties using a loop.
+
+// ----------------------------------------------------------------------------------
+
+Q26. Create a shopping cart object.
+
+Store:
+- Product Name
+- Price
+- Quantity
+
+Print total cost.
+
+// ----------------------------------------------------------------------------------
+
+Q27. Copy an object using spread operator (...).
+
+Check whether changes affect original object.
+
+// ----------------------------------------------------------------------------------
+
+Q28. Explain:
+Object.keys()
+Object.values()
+Object.entries()
+
+in your own words.
+
+// ----------------------------------------------------------------------------------
+
+Q29. Use optional chaining to safely access a nested property.
+
+// ----------------------------------------------------------------------------------
+
+Q30. Predict the output:
+
+let student = {
+    name: "Akash"
+};
+
+console.log(student.name);
+
+// ----------------------------------------------------------------------------------
+
+Q31. Predict the output:
+
+let student = {
+    name: "Akash"
+};
+
+student.age = 21;
+
+console.log(student);
+
+// ----------------------------------------------------------------------------------
+
+Q32. Predict the output:
+
+let student = {
+    name: "Akash"
+};
+
+delete student.name;
+
+console.log(student);
+
+// ----------------------------------------------------------------------------------
+
+Q33. Predict the output:
+
+const student = {
+    name: "Akash"
+};
+
+student.name = "Rahul";
+
+console.log(student.name);
+
+// ----------------------------------------------------------------------------------
+
+Q34. Explain:
+- Object
+- Property
+- Method
+
+in your own words.
+
+// ----------------------------------------------------------------------------------
+
+CHALLENGE
+
+Q35. Build a Student Management Object.
+
+Store:
+- Name
+- Age
+- Marks
+- Course
+
+Add a method:
+
+getGrade()
+
+Rules:
+90+ -> A
+75+ -> B
+60+ -> C
+Below 60 -> Fail
+
+// ----------------------------------------------------------------------------------
+
+Q36. Build a Bank Account Object.
+
+Store:
+- Account Holder
+- Balance
+
+Methods:
+- deposit()
+- withdraw()
+- checkBalance()
+
+// ----------------------------------------------------------------------------------
+
+Q37. Without running the code, predict every output:
+
+let user = {
+    name: "Akash",
+    age: 21
+};
+
+console.log(user.name);
+
+user.city = "Delhi";
+
+console.log(user.city);
+
+delete user.age;
+
+console.log(user);
+
+for(let key in user) {
+    console.log(key);
+}
