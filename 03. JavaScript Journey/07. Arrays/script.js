@@ -1,0 +1,252 @@
+// ======================================== CHAPTER 7: ARRAYS ========================================
+
+Q1. Create an array containing:
+10, 20, 30, 40, 50
+
+Print the entire array.
+
+// ----------------------------------------------------------------------------------
+
+Q2. Print:
+- First element
+- Last element
+- Length
+
+of the array.
+
+// ----------------------------------------------------------------------------------
+
+Q3. Create an array of 5 favorite movies.
+
+Print each movie using a loop.
+
+// ----------------------------------------------------------------------------------
+
+Q4. Update the third element of an array.
+
+Print the updated array.
+
+// ----------------------------------------------------------------------------------
+
+Q5. Add an element to the end using push().
+
+// ----------------------------------------------------------------------------------
+
+Q6. Remove the last element using pop().
+
+// ----------------------------------------------------------------------------------
+
+Q7. Add an element at the beginning using unshift().
+
+// ----------------------------------------------------------------------------------
+
+Q8. Remove the first element using shift().
+
+// ----------------------------------------------------------------------------------
+
+Q9. Predict the output:
+
+let nums = [1, 2, 3];
+
+nums.push(4);
+
+console.log(nums);
+
+// ----------------------------------------------------------------------------------
+
+Q10. Predict the output:
+
+let nums = [1, 2, 3];
+
+nums.pop();
+
+console.log(nums);
+
+// ----------------------------------------------------------------------------------
+
+Q11. Use delete on an array element.
+
+Check:
+- Resulting array
+- Length
+
+// ----------------------------------------------------------------------------------
+
+Q12. Explain why delete does not reduce array length.
+
+// ----------------------------------------------------------------------------------
+
+Q13. Create two arrays and combine them using concat().
+
+// ----------------------------------------------------------------------------------
+
+Q14. Sort an array of numbers.
+
+Observe the output.
+
+// ----------------------------------------------------------------------------------
+
+Q15. Reverse an array.
+
+// ----------------------------------------------------------------------------------
+
+Q16. Replace one element using splice().
+
+// ----------------------------------------------------------------------------------
+
+Q17. Remove two elements using splice().
+
+// ----------------------------------------------------------------------------------
+
+Q18. Add elements using splice().
+
+// ----------------------------------------------------------------------------------
+
+Q19. Create a new array using slice().
+
+// ----------------------------------------------------------------------------------
+
+Q20. Explain the difference between splice() and slice().
+
+// ----------------------------------------------------------------------------------
+
+Q21. Print all elements using:
+- for loop
+- for...of
+- forEach()
+
+// ----------------------------------------------------------------------------------
+
+Q22. Create an array:
+
+[1, 2, 3, 4, 5]
+
+Use map() to create:
+
+[2, 4, 6, 8, 10]
+
+// ----------------------------------------------------------------------------------
+
+Q23. Use map() to square every number in an array.
+
+// ----------------------------------------------------------------------------------
+
+Q24. Use filter() to extract even numbers.
+
+// ----------------------------------------------------------------------------------
+
+Q25. Use filter() to extract numbers greater than 50.
+
+// ----------------------------------------------------------------------------------
+
+Q26. Use reduce() to calculate sum of an array.
+
+// ----------------------------------------------------------------------------------
+
+Q27. Use reduce() to find product of array elements.
+
+// ----------------------------------------------------------------------------------
+
+Q28. Convert the string:
+
+"JavaScript"
+
+into an array using Array.from().
+
+// ----------------------------------------------------------------------------------
+
+Q29. Create an array of marks and find:
+- Highest mark
+- Lowest mark
+
+// ----------------------------------------------------------------------------------
+
+Q30. Count how many even numbers exist in an array.
+
+// ----------------------------------------------------------------------------------
+
+Q31. Reverse a string using arrays.
+
+// ----------------------------------------------------------------------------------
+
+Q32. Remove duplicates from an array.
+
+// ----------------------------------------------------------------------------------
+
+Q33. Create an array of student names.
+
+Print only names starting with "A".
+
+// ----------------------------------------------------------------------------------
+
+Q34. Explain:
+- map()
+- filter()
+- reduce()
+
+in your own words.
+
+// ----------------------------------------------------------------------------------
+
+Q35. Predict every output:
+
+let nums = [1, 2, 3];
+
+console.log(nums.slice(1));
+
+console.log(nums.splice(1, 1));
+
+console.log(nums);
+
+// ----------------------------------------------------------------------------------
+
+CHALLENGE
+
+Q36. Build a Student Marks Analyzer.
+
+Input:
+
+[85, 92, 76, 60, 98]
+
+Find:
+- Total marks
+- Average marks
+- Highest marks
+- Lowest marks
+
+// ----------------------------------------------------------------------------------
+
+Q37. Create a shopping cart system.
+
+Features:
+- Add item
+- Remove item
+- Display all items
+
+Use array methods.
+
+// ----------------------------------------------------------------------------------
+
+Q38. Without running the code, predict every output:
+
+let nums = [1, 2, 3];
+
+nums.push(4);
+
+console.log(nums);
+
+nums.splice(1, 1);
+
+console.log(nums);
+
+let doubled = nums.map(num => num * 2);
+
+console.log(doubled);
+
+let even = nums.filter(num => num % 2 === 0);
+
+console.log(even);
+
+let sum = nums.reduce((a, b) => a + b);
+
+console.log(sum);
