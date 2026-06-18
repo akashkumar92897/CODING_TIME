@@ -121,19 +121,24 @@ console.log(x)          //   33 (var is function scoped, will consider as global
 // ------------------------------------------------------------------------------------------
 
 console.log(count);
-var count = 42;         //   //undefined (Reason: Hoisting)
+var count = 42;         //   undefined (Reason: Hoisting)
 
 
+// ------------------------------------------------------------------------------------------
 // Q14. Observe the output.
-// console.log(age);
-// let age = 21;
-// Explain why.
+// console.log(age1);          //   ReferenceError: Cannot access 'age1' before initialization
+// let age1 = 21;
+// Explain why  ->  It is because of Hoisting thing in JS.
+// ------------------------------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------------------------------
 // Q15. Observe the output.
-// console.log(name);
-// const name = "Akash";
-// Explain why.
+// console.log(name1);         //   ReferenceError: Cannot access 'name1' before initialization
+// const name1 = "Akash";
+// Explain why  -->  It is because of Hoisting thing in JS.
+// ------------------------------------------------------------------------------------------
+
 
 // ------------------------------------------------------------------------------------------
 // Q16. What is Temporal Dead Zone? Write the definition in comments.
@@ -143,96 +148,151 @@ var count = 42;         //   //undefined (Reason: Hoisting)
 
 // ======================================== CONST OBJECTS & ARRAYS ========================================
 
+// ------------------------------------------------------------------------------------------
 // Q17. Create a const object:
-// {
-//     name: "Akash"
-// }
-// Add:
-// - age
-// - city
+// { name: "Akash" }  |  Add  -->  age  |  city
 // Print the object.
+// ------------------------------------------------------------------------------------------
+
+const emp = {
+    name: "Akash"
+}
+emp.age = 22;
+emp.city = "New Delhi"
+console.log(emp)
 
 
+// ------------------------------------------------------------------------------------------
 // Q18. Try doing:
-// student = {}
+// const student = {
+//     name: "Akash"
+// };
+// student = {}         -->   TypeError: Assignment to constant variable.
 // Observe the result.
+// ------------------------------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------------------------------
 // Q19. Create a const array. Add 5 values using push().
+// ------------------------------------------------------------------------------------------
 
+const arr = []
+arr.push(1)
+arr.push(2)
+arr.push(3)
+arr.push(4)
+arr.push(5)
 
+// ------------------------------------------------------------------------------------------
 // Q20. Try reassigning the array. Observe the result.
+// const arr = [6, 7, 8, 9, 10]        -->  SyntaxError: Identifier 'arr' has already been declared
+// ------------------------------------------------------------------------------------------
 
 
 
 // // ======================================== DEBUGGING QUESTIONS ========================================
 
+// ------------------------------------------------------------------------------------------
 // Q21. Fix the code.
-// const age;
-// age = 21;
+// const age2;         -->   SyntaxError: Missing initializer in const declaration.
+// age2 = 21;
+// ------------------------------------------------------------------------------------------
 
+const age2 = 22;
 
+// ------------------------------------------------------------------------------------------
 // Q22. Fix the code.
-// let city = "Delhi";
+// let city = "Delhi";         -->   SyntaxError: Redeclaration of let is not allowed.
 // let city = "Mumbai";
+// ------------------------------------------------------------------------------------------
+
+let town = "Delhi";
+town = "Mumbai";
 
 
+// ------------------------------------------------------------------------------------------
 // Q23. Fix the code.
-// console.log(name);
-// const name = "Akash";
+// console.log(name1);         -->   ReferenceError: Cannot access 'name1' before initialization
+// const name1 = "Akash";
+// ------------------------------------------------------------------------------------------
 
+const name1 = "SKY";
+console.log(name1);
 
 
 // // ======================================== REAL WORLD QUESTIONS ========================================
 
+// ------------------------------------------------------------------------------------------
 // Q24. Create variables for a student:
 // - name
 // - age
 // - course
 // - college
 // Choose correct declaration keywords.
+// ------------------------------------------------------------------------------------------
 
+let name2 = "sky";
+let age3 = 22;
+let course = "BCA";
+let college = "DSEU";
 
+// ------------------------------------------------------------------------------------------
 // Q25. Create a profile object using const.
 // Store:
 // - name
 // - skills
 // - education
 // Add one more property later.
+// ------------------------------------------------------------------------------------------
 
+const profile = {
+    name: "Akash",
+    skills: "JS Dev",
+    education: "BCA"
+}
+profile.yearOfGrad = 2026;
 
+// ------------------------------------------------------------------------------------------
 // Q26. Create a shopping cart array using const.
 // Add:
 // - Laptop
 // - Mouse
 // - Keyboard
 // Print the final array.
+// ------------------------------------------------------------------------------------------
+
+const shop = ["Laptop", "Mouse", "Keyboard"]
+console.log(shop)
 
 
 // // ======================================== INTERVIEW STYLE QUESTIONS ========================================
 
-// Q27. Difference between:
-// var
-// let
-// const
-// Write answer in comments.
+// ------------------------------------------------------------------------------------------
+// Q27. Difference between: var  |  let  |  const   -->   Write answer in comments.
+// ------------------------------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------------------------------
 // Q28. What is hoisting? Write answer in comments.
+// ------------------------------------------------------------------------------------------
 
 
+// ------------------------------------------------------------------------------------------
 // Q29. What is block scope? Write answer in comments.
+// ------------------------------------------------------------------------------------------
 
 
-// Q30.
-// Why should modern JavaScript prefer:
-// const → let → var
-// Write answer in comments.
+// ------------------------------------------------------------------------------------------
+// Q30. Why should modern JavaScript prefer   -->   const → let → var
+// ------------------------------------------------------------------------------------------
 
 
 // // ======================================== CHALLENGE ========================================
 
+// ------------------------------------------------------------------------------------------
 // Q31. Without running the code, predict every output.
+// ------------------------------------------------------------------------------------------
+
 var a = 10;
 {
     var a = 20;
