@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << sizeof(int) << endl;            // 4
+    cout << sizeof(long int) << endl;       // 4
+    cout << sizeof(short int) << endl;      // 2
+    cout << sizeof(long long) << endl;      // 8
+    cout << sizeof(signed int) << endl;     // 4
+    cout << sizeof(unsigned int) << endl;   // 4
+    return 0;
+}
