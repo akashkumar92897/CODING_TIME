@@ -1,0 +1,109 @@
+/* Universal Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Base Page */
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222;
+    background-color: #fff;
+
+    margin: 30px;
+    padding: 30px;
+
+    border: 2px solid #222;
+    border-radius: 12px;
+
+    min-height: calc(100vh - 60px);
+}
+
+
+/* Header */
+
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* Changelog */
+
+.changelog {
+    position: relative;
+    width: 900px;
+    margin: 50px auto;
+}
+
+
+/* Vertical Timeline */
+
+.timeline-line {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 2px;
+    background-color: black;
+}
+
+
+/* Individual Entries */
+
+.changelog-entry {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    min-height: 45px;
+    margin-bottom: 15px;
+}
+
+
+/* Timeline Dot */
+
+.changelog-entry::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: calc(50% + 1px);
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+/* Date */
+
+.date {
+    width: 450px;
+    text-align: right;
+    padding-right: 30px;
+}
+
+
+/* Update */
+
+.update {
+    width: 450px;
+    padding-left: 30px;
+}
+
+
+/* Button */
+
+button {
+    display: block;
+    margin: 30px auto;
+    padding: 10px 20px;
+    font: inherit;
+    cursor: pointer;
+}
