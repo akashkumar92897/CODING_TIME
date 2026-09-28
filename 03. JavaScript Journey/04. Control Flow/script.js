@@ -1,10 +1,8 @@
 // ======================================== CHAPTER 4: CONTROL FLOW ========================================
-
 // ------------------------------------------------------------------------------------------
 // Q1. Create a program that checks:
 // If a person is eligible to vote  |  If not, print a suitable message
 // ------------------------------------------------------------------------------------------
-
 let age = 19;
 if (age >= 18) {
     console.log("Eligible!");
@@ -15,7 +13,6 @@ if (age >= 18) {
 // ------------------------------------------------------------------------------------------
 // Q2. Create a program that checks whether a number is  -->  Positive  |  Negative  |  Zero
 // ------------------------------------------------------------------------------------------
-
 let number = 23;
 if (number > 0) {
     console.log("Positive No.")
@@ -29,7 +26,6 @@ if (number > 0) {
 // ------------------------------------------------------------------------------------------
 // Q3. Create a program that checks  -->  Even  |  Odd  -->  using if-else.
 // ------------------------------------------------------------------------------------------
-
 let num = 23;
 if (num % 2 === 0) {
     console.log("Even No.")
@@ -43,7 +39,6 @@ if (num % 2 === 0) {
 // ------------------------------------------------------------------------------------------
 // Q4. Predict the output:
 // ------------------------------------------------------------------------------------------
-
 let age1 = 20;
 if (age1 >= 18) {
     console.log("Adult");        //  Adult
@@ -53,7 +48,6 @@ if (age1 >= 18) {
 // ------------------------------------------------------------------------------------------
 // Q5. Predict the output:
 // ------------------------------------------------------------------------------------------
-
 let age2 = 15;
 if (age2 >= 18) {
     console.log("Adult");
@@ -66,7 +60,6 @@ else {
 // ------------------------------------------------------------------------------------------
 // Q6. Create a grade checker  -->  90+ : A  |  75+ : B  |  60+ : C  |  Below 60 : Fail
 // ------------------------------------------------------------------------------------------
-
 let marks = 69;
 if (marks > 90) {
     console.log("A Grade.")
@@ -82,7 +75,6 @@ if (marks > 90) {
 // ------------------------------------------------------------------------------------------
 // Q7. Create a salary bonus program  -->  Salary > 50000 → Bonus  |  Otherwise → No Bonus
 // ------------------------------------------------------------------------------------------
-
 let salary = 56555;
 if (salary >= 50000) {
     console.log("Eligible for bonus 🥳")
@@ -95,7 +87,6 @@ if (salary >= 50000) {
 // Q8. Create a login system:
 // If user is logged in  -->  Print Welcome  |  Otherwise  -->  Print Please Login
 // ------------------------------------------------------------------------------------------
-
 let user = "logged in";
 if (user === "logged in") {
     console.log("Welcome to JS!")
@@ -107,7 +98,6 @@ if (user === "logged in") {
 // ------------------------------------------------------------------------------------------
 // Q9. Create a program that checks -> Divisible by 2 | Divisible by 3 | Divisible by both
 // ------------------------------------------------------------------------------------------
-
 let nums = 11;
 if (nums % 2 === 0 && nums % 3 === 0) {
     console.log("Number is divisible by 2 & 3 : " + nums)
@@ -123,7 +113,6 @@ if (nums % 2 === 0 && nums % 3 === 0) {
 // ------------------------------------------------------------------------------------------
 // Q10. Predict the output:
 // ------------------------------------------------------------------------------------------
-
 let mark = 85;
 if (mark >= 90) {
     console.log("A");
@@ -139,7 +128,6 @@ else {
 // ------------------------------------------------------------------------------------------
 // Q11. Predict the output:
 // ------------------------------------------------------------------------------------------
-
 let mark1 = 95;
 if (mark1 >= 50) {
     console.log("Pass");        //   Pass
@@ -161,7 +149,6 @@ else if (mark1 >= 90) {
 // Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday
 // Print a different message for each day.
 // ------------------------------------------------------------------------------------------
-
 let day = "Sunday";
 switch (day) {
     case "Monday":
@@ -192,7 +179,6 @@ switch (day) {
 // Q14. Create a switch statement for traffic lights -> Red | Yellow | Green
 // Print the appropriate action.
 // ------------------------------------------------------------------------------------------
-
 let light = "Yellow";
 switch (light) {
     case ("Red"):
@@ -210,7 +196,6 @@ switch (light) {
 // ------------------------------------------------------------------------------------------
 // Q15. Switch statement for months -> 1 -> January | 2 -> February | ... | 12 -> December
 // ------------------------------------------------------------------------------------------
-
 switch (5) {
     case 1:
         console.log("Januray")
@@ -254,7 +239,6 @@ switch (5) {
 // ------------------------------------------------------------------------------------------
 // Q16. Predict the output:
 // ------------------------------------------------------------------------------------------
-
 switch ("A") {
     case "A":
         console.log("A");        // A
@@ -272,7 +256,6 @@ switch ("A") {
 // ------------------------------------------------------------------------------------------
 // Q18. Add break statements to Q16 and observe the difference.
 // ------------------------------------------------------------------------------------------
-
 switch ("B") {
     case "A":
         console.log("A");
@@ -286,7 +269,6 @@ switch ("B") {
 // ------------------------------------------------------------------------------------------
 // Q19. Create a calculator using switch  -->  Operators -> +  |  -  |  *  |  /
 // ------------------------------------------------------------------------------------------
-
 let n1 = 6;
 let n2 = 3;
 let oper = "Divide";
@@ -311,7 +293,6 @@ switch (oper) {
 // Q20. Create a weather advisor.
 // Weather can be : Sunny  |  Rainy  |  Cloudy  |  Winter  -->  Use switch-case.
 // ------------------------------------------------------------------------------------------
-
 switch ("Sunny") {
     case "Sunny":
         console.log("Sun is so harsh 🥵")
@@ -332,7 +313,6 @@ switch ("Sunny") {
 // Q21. Create an age category checker.
 // 0-12     -> Kid  |  13-19    -> Teen  |  20-59    -> Adult  |  60+      -> Senior
 // ------------------------------------------------------------------------------------------
-
 let age3 = 22;
 if (age3 <= 12) {
     console.log("Kid")
@@ -349,29 +329,39 @@ if (age3 <= 12) {
 // Q22. Create a program that checks:
 // username = ""  |  Use username directly inside if.  |  Observe the result.
 // ------------------------------------------------------------------------------------------
-
 let username = ""
 if(username){
     console.log(username)       // No output because if condition is false
 }
 
+
 // ------------------------------------------------------------------------------------------
 // Q23. Create a program that checks:
 // username = "Akash"  |  Use username directly inside if.  |  Observe the result.
 // ------------------------------------------------------------------------------------------
-
 let username2 = "Akash"
 if(username2){
     console.log(username2)       // Akash  -->   because if condition is true
 }
 
+
 // ------------------------------------------------------------------------------------------
-// Q24. Explain : Truthy Values in your own words.
+// Q24. Explain: Truthy Values in your own words.
+// Truthy values are values that JavaScript treats as true when they are used in a condition, 
+// even if their actual value is not the boolean true.
+// Examples:
+// "Hello"  → Truthy | 1        → Truthy | []       → Truthy | {}       → Truthy
+// In simple words: Truthy means a value that makes an if condition execute.
 // ------------------------------------------------------------------------------------------
 
 
 // ------------------------------------------------------------------------------------------
-// Q25. Explain : Falsy Values in your own words.
+// Q25. Explain: Falsy Values in your own words.
+// Falsy values are values that JavaScript treats as false when they are used in a condition.
+// Examples:
+// false       → Falsy | 0           → Falsy | ""          → Falsy | null        → Falsy | 
+// undefined   → Falsy | NaN         → Falsy
+// In simple words: Falsy means a value that makes an if condition not execute.
 // ------------------------------------------------------------------------------------------
 
 
@@ -379,7 +369,6 @@ if(username2){
 // Q26. Create a function : checkAge(age)
 // Return : Allowed  |  Denied  -->  Use early return pattern.
 // ------------------------------------------------------------------------------------------
-
 function checkAge(age) {
     if(age < 18) {
         return "Denied";
@@ -397,12 +386,14 @@ console.log(checkAge(24));
 //     }
 // }
 // ------------------------------------------------------------------------------------------
+if (age >= 18 && hasID) {
+    console.log("Allowed");
+}
 
 
 // ------------------------------------------------------------------------------------------
 // Q28. Create a program that checks : age >= 18  |  hasID == true --> Only then allow entry.
 // ------------------------------------------------------------------------------------------
-
 let age4 = 44;
 let hasID = true;
 if (age4 >= 18 && hasID == true) {
@@ -411,13 +402,19 @@ if (age4 >= 18 && hasID == true) {
 
 // ------------------------------------------------------------------------------------------
 // Q29. Explain the difference between : if-else and switch-case
+// | `if-else`                        | `switch-case`                                           |                   |                    |
+// | -------------------------------- | ------------------------------------------------------- | ----------------- | ------------------ |
+// | Used for checking **conditions** | Used for comparing **one value against multiple cases** |                   |                    |
+// | Can use ranges like `age >= 18`  | Usually checks specific values                          |                   |                    |
+// | Supports complex conditions      | Best for fixed, known values                            |                   |                    |
+// | Can use `&&`, `                  |                                                         | `, `>`, `<`, etc. | Uses `case` values |
+// | More flexible                    | Cleaner when there are many exact choices               |                   |                    |
 // ------------------------------------------------------------------------------------------
 
 
 // ------------------------------------------------------------------------------------------
 // Q30. Predict every output:
 // ------------------------------------------------------------------------------------------
-
 let isLoggedIn = true;
 if (isLoggedIn) {
     console.log("Welcome");          // welcome
@@ -432,14 +429,12 @@ switch ("Friday") {
 
 
 // ======================================== CHALLENGE ========================================
-
 // ------------------------------------------------------------------------------------------
 // Q31. Build a complete Student Result System.
 // Input : Name | Marks
 // Output : 90+ -> Excellent | 75+ -> Good | 60+ -> Average | 40+ -> Pass | Below 40 -> Fail
 // Also print : Student Name | Marks | Grade
 // ------------------------------------------------------------------------------------------
-
 let name = "Akash"
 let markss = 94;
 
@@ -459,13 +454,11 @@ if (markss > 90){
 }
 
 
-
 // ------------------------------------------------------------------------------------------
 // Q32. Build a simple ATM Menu using switch.
 // Options : 1 -> Check Balance | 2 -> Withdraw | 3 -> Deposit | 4 -> Exit
 // Print appropriate messages.
 // ------------------------------------------------------------------------------------------
-
 let ATM = 1;
 switch(ATM){
     case 1:
