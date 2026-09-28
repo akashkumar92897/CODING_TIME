@@ -1,11 +1,8 @@
 // ======================================== CHAPTER 1: VARIABLES & DECLARATIONS ========================================
-
 // ------------------------------------------------------------------------------------------
-// Q1. Create variables to store:
-// Your name  |  Your age  |  Your city
+// Q1. Create variables to store: Your name  |  Your age  |  Your city
 // Use the most appropriate declaration keyword.
 // ------------------------------------------------------------------------------------------
-
 let name = "AKASH";
 let age = 22;
 let city = "New Delhi";
@@ -14,7 +11,6 @@ let city = "New Delhi";
 // ------------------------------------------------------------------------------------------
 // Q2. Declare a variable using let and update its value three times. Print the final value.
 // ------------------------------------------------------------------------------------------
-
 let height = 40;
 height = 60;
 height = 90;
@@ -24,7 +20,6 @@ console.log(height)
 // ------------------------------------------------------------------------------------------
 // Q3. Declare a constant PI with value 3.14. Try changing its value. Observe the error.
 // ------------------------------------------------------------------------------------------
-
 const pi = 3.14
 // pi = 22.4           ->          Uncaught TypeError: Assignment to constant variable.
 console.log(pi)
@@ -33,7 +28,6 @@ console.log(pi)
 // ------------------------------------------------------------------------------------------
 // Q4. Predict the output before running.
 // ------------------------------------------------------------------------------------------
-
 console.log(a);
 var a = 10;         //undefined (Reason: Hoisting)
 
@@ -62,9 +56,9 @@ var a = 10;         //undefined (Reason: Hoisting)
 
 // ------------------------------------------------------------------------------------------
 // Q8. Will this work?
-// var marks = 50;
-// var marks = 80;
-// Why?         ->   NoError   ->   Var can be redecalre and reassignes.
+var marks = 50;
+var marks = 80;
+// Why?         ->   NoError   ->   Var can be redecalre and reassigned.
 // ------------------------------------------------------------------------------------------
 
 
@@ -72,7 +66,6 @@ var a = 10;         //undefined (Reason: Hoisting)
 // Q9. Create a block using {}
 // Declare: var x  |  let y  |  const z  |  Try accessing them outside the block.
 // ------------------------------------------------------------------------------------------
-
 {
     var x = 33;
     let y = 54;
@@ -86,17 +79,15 @@ console.log(x)          //   33 (var is function scoped, will consider as global
 // ------------------------------------------------------------------------------------------
 // Q10. Predict the output.
 // ------------------------------------------------------------------------------------------
-
-// {
-//     var a = 10;
-// }
-// console.log(a);         // 10 
+{
+    var a = 10;
+}
+console.log(a);         // 10 
 
 
 // ------------------------------------------------------------------------------------------
 // Q11. Predict the output.
 // ------------------------------------------------------------------------------------------
-
 {
     let b = 20;
 }
@@ -106,7 +97,6 @@ console.log(x)          //   33 (var is function scoped, will consider as global
 // ------------------------------------------------------------------------------------------
 // Q12. Predict the output.
 // ------------------------------------------------------------------------------------------
-
 {
     const c = 30;
 }
@@ -115,11 +105,9 @@ console.log(x)          //   33 (var is function scoped, will consider as global
 
 
 // // ======================================== TDZ & HOISTING ========================================
-
 // ------------------------------------------------------------------------------------------
 // Q13. Observe the output.
 // ------------------------------------------------------------------------------------------
-
 console.log(count);
 var count = 42;         //   undefined (Reason: Hoisting)
 
@@ -142,18 +130,23 @@ var count = 42;         //   undefined (Reason: Hoisting)
 
 // ------------------------------------------------------------------------------------------
 // Q16. What is Temporal Dead Zone? Write the definition in comments.
+// The Temporal Dead Zone is the period between entering a scope and the point where a 
+// let or const variable is declared, during which the variable cannot be accessed.
+// Example
+// console.log(a);
+// let a = 10;
+// Output
+// ReferenceError: Cannot access 'a' before initialization
 // ------------------------------------------------------------------------------------------
 
 
 
 // ======================================== CONST OBJECTS & ARRAYS ========================================
-
 // ------------------------------------------------------------------------------------------
 // Q17. Create a const object:
 // { name: "Akash" }  |  Add  -->  age  |  city
 // Print the object.
 // ------------------------------------------------------------------------------------------
-
 const emp = {
     name: "Akash"
 }
@@ -175,7 +168,6 @@ console.log(emp)
 // ------------------------------------------------------------------------------------------
 // Q19. Create a const array. Add 5 values using push().
 // ------------------------------------------------------------------------------------------
-
 const arr = []
 arr.push(1)
 arr.push(2)
@@ -189,15 +181,12 @@ arr.push(5)
 // ------------------------------------------------------------------------------------------
 
 
-
 // // ======================================== DEBUGGING QUESTIONS ========================================
-
 // ------------------------------------------------------------------------------------------
 // Q21. Fix the code.
 // const age2;         -->   SyntaxError: Missing initializer in const declaration.
 // age2 = 21;
 // ------------------------------------------------------------------------------------------
-
 const age2 = 22;
 
 // ------------------------------------------------------------------------------------------
@@ -205,7 +194,6 @@ const age2 = 22;
 // let city = "Delhi";         -->   SyntaxError: Redeclaration of let is not allowed.
 // let city = "Mumbai";
 // ------------------------------------------------------------------------------------------
-
 let town = "Delhi";
 town = "Mumbai";
 
@@ -215,13 +203,11 @@ town = "Mumbai";
 // console.log(name1);         -->   ReferenceError: Cannot access 'name1' before initialization
 // const name1 = "Akash";
 // ------------------------------------------------------------------------------------------
-
 const name1 = "SKY";
 console.log(name1);
 
 
 // // ======================================== REAL WORLD QUESTIONS ========================================
-
 // ------------------------------------------------------------------------------------------
 // Q24. Create variables for a student:
 // - name
@@ -230,11 +216,11 @@ console.log(name1);
 // - college
 // Choose correct declaration keywords.
 // ------------------------------------------------------------------------------------------
-
 let name2 = "sky";
 let age3 = 22;
 let course = "BCA";
 let college = "DSEU";
+
 
 // ------------------------------------------------------------------------------------------
 // Q25. Create a profile object using const.
@@ -244,13 +230,13 @@ let college = "DSEU";
 // - education
 // Add one more property later.
 // ------------------------------------------------------------------------------------------
-
 const profile = {
     name: "Akash",
     skills: "JS Dev",
     education: "BCA"
 }
 profile.yearOfGrad = 2026;
+
 
 // ------------------------------------------------------------------------------------------
 // Q26. Create a shopping cart array using const.
@@ -260,39 +246,77 @@ profile.yearOfGrad = 2026;
 // - Keyboard
 // Print the final array.
 // ------------------------------------------------------------------------------------------
-
 const shop = ["Laptop", "Mouse", "Keyboard"]
 console.log(shop)
 
 
 // // ======================================== INTERVIEW STYLE QUESTIONS ========================================
-
 // ------------------------------------------------------------------------------------------
-// Q27. Difference between: var  |  let  |  const   -->   Write answer in comments.
+// Q27. Difference between: var  |  let  |  const  -->  Write answer in comments.
+// ---------- var: ----------
+// - Function-scoped.
+// - Can be redeclared and reassigned.
+// - Hoisted and initialized with undefined.
+// ---------- let: ----------
+// - Block-scoped.
+// - Cannot be redeclared in the same scope.
+// - Can be reassigned.
+// - Hoisted but remains in the Temporal Dead Zone (TDZ) until declaration.
+// ---------- const: ----------
+// - Block-scoped.
+// - Cannot be redeclared or reassigned.
+// - Must be initialized when declared.
+// - Hoisted but remains in the Temporal Dead Zone (TDZ) until declaration.
 // ------------------------------------------------------------------------------------------
 
 
 // ------------------------------------------------------------------------------------------
 // Q28. What is hoisting? Write answer in comments.
+// Hoisting is JavaScript's behavior where declarations are processed
+// before the execution of the code in their scope.
+// var is hoisted and initialized with undefined.
+// let and const are hoisted but remain uninitialized in the TDZ.
+// ---------- Example: ----------
+// console.log(a);  // undefined
+// var a = 10;
 // ------------------------------------------------------------------------------------------
 
 
 // ------------------------------------------------------------------------------------------
 // Q29. What is block scope? Write answer in comments.
+// Block scope means a variable is accessible only inside the block
+// { } where it is declared.
+// let and const are block-scoped.
+// var is NOT block-scoped; it is function-scoped.
+// ---------- Example: ----------
+// {
+//     let a = 10;
+//     const b = 20;
+// }
+// a and b cannot be accessed outside the block.
 // ------------------------------------------------------------------------------------------
 
 
 // ------------------------------------------------------------------------------------------
-// Q30. Why should modern JavaScript prefer   -->   const → let → var
-// ------------------------------------------------------------------------------------------
+// Q30. Why should modern JavaScript prefer  -->  const → let → var
+// const should be preferred when the variable will not be reassigned.
+// let should be used when the variable needs to be reassigned.
+// var should generally be avoided in modern JavaScript.
+// ---------- Reasons: ----------
+// - const and let are block-scoped.
+// - They avoid many problems associated with var's function scope.
+// - const communicates that the variable will not be reassigned.
+// - let clearly communicates that reassignment is expected.
+// ---------- Rule: ----------
+// const → default choice
+// let   → when reassignment is needed
+// var   → generally avoid
 
 
-// // ======================================== CHALLENGE ========================================
-
+// ======================================== CHALLENGE ========================================
 // ------------------------------------------------------------------------------------------
 // Q31. Without running the code, predict every output.
 // ------------------------------------------------------------------------------------------
-
 var a = 10;
 {
     var a = 20;
